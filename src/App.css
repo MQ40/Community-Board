@@ -1,0 +1,118 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  background-color: #13181c;
+}
+
+h1{
+  font-size: 40px;
+  color:#ffffff;
+  text-shadow: rgb(125, 125, 125) 1px 0px 10px;
+}
+
+h2{
+  font-size: 20px;
+  color:#ffffff;
+  text-shadow: rgb(0, 0, 0) 1px 0px 10px;
+}
+
+.App{
+  margin: 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem;
+  justify-content: center;
+}
+
+.card {
+  border: 2px solid #EA9215;
+  background-color: #13181c;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px; 
+  width: calc(100% / 3 - 20px);
+  max-width: 20rem;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__title{
+  font-size: 25px;
+  padding: 1rem;
+}
+.card__description{
+  padding:0 1rem;
+}
+
+.card__btn {
+  background: transparent;
+  color: white;
+  border: 2px solid #48c78e;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 2rem;
+  transition: 200ms ease-in, color 200ms ease-in;
+}
+
+.card__btn:hover {
+  transform: scale(1.02);
+}
+
+.card__btn:hover {
+  background: #48c78e;
+  color: #13181c;
+}
+
+.resources-container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem;
+  justify-content: center;
+}
+
+.resources-container .card {
+  border-color: #158eea; /* Change the border color */
+}
+
+/* Stretch features for mobile format */
+@media screen and (max-width: 768px) {
+  .card-container, .resources-container {
+    padding: 2rem; 
+  }
+
+  .card {
+    width: calc(100%); 
+  }
+
+  h1 {
+    font-size: 30px; 
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .card__title {
+    font-size: 20px; 
+  }
+}
